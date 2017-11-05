@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Anum</string>
+    <string name="solutions_of_systems_of_equations">Solutions of Systems of Equations</string>
+    <string name="interpolation_methods">Interpolation Methods</string>
+    <string name="anum">Anum</string>
+    <string name="non_linear_methods">Non Linear Methods</string>
+</resources>
