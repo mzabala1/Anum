@@ -19,6 +19,7 @@
         <activity android:name=".NonLinearMethods" />
         <activity android:name=".SolutionsOfSystemsOfEquations" />
         <activity android:name=".InterpolationMethods"></activity>
+        <activity android:name=".Grapher"></activity>
     </application>
 
 </manifest>

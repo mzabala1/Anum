@@ -41,9 +41,9 @@ public class Main extends AppCompatActivity implements View.OnClickListener{
                 break;
             case R.id.btnInterpo:
                 Intent aInter = new Intent(Main.this, InterpolationMethods.class);
-            startActivity(aInter);
-            finish();
-            break;
+                startActivity(aInter);
+                finish();
+                break;
         }
     }
 }
