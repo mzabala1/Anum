@@ -21,6 +21,7 @@
         <activity android:name=".InterpolationMethods"></activity>
         <activity android:name=".Grapher"></activity>
         <activity android:name=".IncSearch"></activity>
+        <activity android:name=".FixedPoint"></activity>
     </application>
 
 </manifest>
