@@ -27,4 +27,5 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     compile "com.androidplot:androidplot-core:1.5.1"
     compile group: 'net.objecthunter' , name: 'exp4j', version: '0.4.7'
+    compile 'com.android.support:design:26.1.0'
 }

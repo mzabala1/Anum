@@ -4,4 +4,76 @@
     <string name="interpolation_methods">Interpolation Methods</string>
     <string name="anum">Anum</string>
     <string name="non_linear_methods">Non Linear Methods</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_graphic">Graphic</string>
+    <string name="title_activity_inc_search">Incremental Search</string>
+    <string name="title_activity_bisection">Bisection</string>
+    <string name="title_activity_false_rule">False Rule</string>
+    <string name="title_activity_fixed_point">Fixed Point</string>
+    <string name="title_activity_newton">Newton</string>
+    <string name="title_activity_secant">Secant</string>
+    <string name="title_activity_multiple_sqrt">Multiple Square Roots</string>
+    <string name="title_activity_matrix">Matrix</string>
+    <string name="title_activity_interpolation">Interpolation</string>
+    <string name="title_activity_equation_system">Equations System</string>
+
+    <string name="xiviewBis">Xi</string>
+    <string name="xitextBis">Initial X</string>
+    <string name="xsviewBis">Xs</string>
+    <string name="xstextBis">Final X</string>
+    <string name="tolviewBis">Tolerance</string>
+    <string name="toltextBis">Tolerance Value</string>
+    <string name="iterviewBis">Iterations</string>
+    <string name="itertextBis"># Iterations</string>
+
+    <string name="x0viewSearch">X0</string>
+    <string name="x0textSearch">Initial X</string>
+    <string name="delviewSearch">Delta</string>
+    <string name="deltextSearch">Delta Value</string>
+    <string name="iterviewSearch">Iterations</string>
+    <string name="itertextSearch"># Iterations</string>
+
+    <string name="xiviewFalseRule">Xi</string>
+    <string name="xitextFalseRule">x inicial</string>
+    <string name="xsviewFalseRule">Xs</string>
+    <string name="xstextFalseRule">Final X</string>
+    <string name="tolviewFalseRule">Tolerance</string>
+    <string name="toltextFalseRule">valor Tolerance</string>
+    <string name="iterviewFalseRule">Iterations</string>
+    <string name="itertextFalseRule"># Iterations</string>
+
+    <string name="xnviewFixedPoint">Xn</string>
+    <string name="xntextFixedPoint">x inicial</string>
+    <string name="tolviewFixedPoint">Tolerance</string>
+    <string name="toltextFixedPoint">valor Tolerance</string>
+    <string name="iterviewFixedPoint">Iterations</string>
+    <string name="itertextFixedPoint"># Iterations</string>
+
+    <string name="title_activity_integration">Integration</string>
+
+    <string name="xnviewNewton">Xn</string>
+    <string name="xntextNewton">x inicial</string>
+    <string name="tolviewNewton">Tolerance</string>
+    <string name="toltextNewton">valor Tolerance</string>
+    <string name="iterviewNewton">Iterations</string>
+    <string name="itertextNewton"># Iterations</string>
+
+    <string name="x0viewSecant">X0</string>
+    <string name="x0textSecant">x0</string>
+    <string name="x1viewSecant">X1</string>
+    <string name="x1textSecant">x1</string>
+    <string name="tolviewSecant">Tolerance</string>
+    <string name="toltextSecant">valor Tolerance</string>
+    <string name="iterviewSecant">Iterations</string>
+    <string name="itertextSecant"># Iterations</string>
+
+    <string name="xnviewMultiplesSQRT">Xn</string>
+    <string name="xntextMultiplesSQRT">x inicial</string>
+    <string name="tolviewMultiplesSQRT">Tolerance</string>
+    <string name="toltextMultiplesSQRT">valor Tolerance</string>
+    <string name="iterviewMultiplesSQRT">Iterations</string>
+    <string name="itertextMultiplesSQRT"># Iterations</string>
 </resources>
