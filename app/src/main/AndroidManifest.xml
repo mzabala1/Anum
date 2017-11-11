@@ -20,7 +20,7 @@
         <activity android:name=".SolutionsOfSystemsOfEquations" />
         <activity android:name=".InterpolationMethods"></activity>
         <activity android:name=".Grapher"></activity>
-        <activity android:name=".Bisection"></activity>
+        <activity android:name=".IncSearch"></activity>
     </application>
 
 </manifest>
