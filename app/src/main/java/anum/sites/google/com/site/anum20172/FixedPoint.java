@@ -46,7 +46,7 @@ public class FixedPoint extends AppCompatActivity {
 
         DecimalFormat df = new DecimalFormat( "#########0.00E00" );
 
-        // Creando el analizador para la función
+        // Creating function analyzer
         try {
             Expression f = new ExpressionBuilder(fn)
                     .variables("x").build();
@@ -54,7 +54,7 @@ public class FixedPoint extends AppCompatActivity {
             Expression g = new ExpressionBuilder(gn)
                     .variables("x").build();
 
-            // Crear tabla para ingresar los datos obtenidos por el método
+            // Creating the table to input the results from the method
             TableLayout table = (TableLayout)findViewById(R.id.fpoint_table);
             TableRow ttr = new TableRow(this);
             TableRow.LayoutParams tlp = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT);
