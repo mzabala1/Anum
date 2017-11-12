@@ -30,6 +30,20 @@
                     <TextView
                         android:layout_width="150sp"
                         android:layout_height="match_parent"
+                        android:id="@+id/expressionText"
+                        android:text="Expression"/>
+                    <EditText
+                        android:layout_height="match_parent"
+                        android:id="@+id/expression"
+                        android:layout_width="match_parent"
+                        android:inputType="textPersonName"
+                        android:hint="Expression" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="150sp"
+                        android:layout_height="match_parent"
                         android:id="@+id/x0textSearch"
                         android:text="@string/x0viewSearch"/>
                     <EditText

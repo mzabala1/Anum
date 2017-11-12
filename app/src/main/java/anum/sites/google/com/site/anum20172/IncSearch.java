@@ -20,22 +20,19 @@ public class IncSearch extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inc_search);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle = getIntent().getExtras();
-                createTable(bundle.getString("expr"));
+                createTable();
             }
         });
     }
 
-    protected void createTable(String exp) {
+    protected void createTable() {
         final TextView IncSearchResultView = (TextView)findViewById(R.id.IncSearch_result);
-
+        final EditText exprEdit = (EditText)findViewById(R.id.expression);
         final EditText xoEdit = (EditText)findViewById(R.id.x0numberSearch);
         final EditText deltaEdit = (EditText)findViewById(R.id.delnumberSearch);
         final EditText iterEdit = (EditText)findViewById(R.id.iternumberSearch);
@@ -43,7 +40,7 @@ public class IncSearch extends AppCompatActivity {
         Double x0 = Double.parseDouble(xoEdit.getText().toString());
         Double delta = Double.parseDouble(deltaEdit.getText().toString());
         int iter = Integer.parseInt(iterEdit.getText().toString());
-
+        String exp = exprEdit.getText().toString();
         // Creating analyzer
         try {
             Expression e = new ExpressionBuilder(exp)
