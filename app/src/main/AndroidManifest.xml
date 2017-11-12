@@ -23,6 +23,10 @@
         <activity android:name=".IncSearch"></activity>
         <activity android:name=".FixedPoint"></activity>
         <activity android:name=".Secant"></activity>
+        <activity android:name=".FalseRule"></activity>
+        <activity android:name=".Bisection"></activity>
+        <activity android:name=".Newton"></activity>
+        <activity android:name=".MultipleRoots"></activity>
     </application>
 
 </manifest>
