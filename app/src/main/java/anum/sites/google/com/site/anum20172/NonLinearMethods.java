@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class NonLinearMethods extends AppCompatActivity implements View.OnClickListener{
 
-    Button btnIncSearch, btnFixedPoint, btnSecant;
+    Button btnIncSearch, btnFixedPoint, btnSecant, btnBisection, btnMultRoots, btnNewton, btnFalseRule;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,25 +18,18 @@ public class NonLinearMethods extends AppCompatActivity implements View.OnClickL
         btnIncSearch = findViewById(R.id.btnIncSearch);
         btnFixedPoint = findViewById(R.id.btnFixedPoint);
         btnSecant = findViewById(R.id.btnSecant);
-
-        btnIncSearch.setOnClickListener(this);
-        btnFixedPoint.setOnClickListener(this);
-        btnSecant.setOnClickListener(this);
-
-        //btnBisection = findViewById(R.id.btnBisection);
-
-        /*btnMultSQroot = findViewById(R.id.btnMultSQroot);
+        btnBisection = findViewById(R.id.btnBisection);
+        btnMultRoots = findViewById(R.id.btnMultRoots);
         btnFalseRule = findViewById(R.id.btnFalseRule);
-        btnSecant = findViewById(R.id.btnSecant);
         btnNewton = findViewById(R.id.btnNewton);
 
-        btnBisection.setOnClickListener(this);
         btnIncSearch.setOnClickListener(this);
         btnFixedPoint.setOnClickListener(this);
-        btnMultSQroot.setOnClickListener(this);
-        btnFalseRule.setOnClickListener(this);
         btnSecant.setOnClickListener(this);
-        btnNewton.setOnClickListener(this);*/
+        btnBisection.setOnClickListener(this);
+        btnMultRoots.setOnClickListener(this);
+        btnFalseRule.setOnClickListener(this);
+        btnNewton.setOnClickListener(this);
     }
 
     @Override
@@ -55,6 +48,26 @@ public class NonLinearMethods extends AppCompatActivity implements View.OnClickL
             case R.id.btnSecant:
                 Intent aSec = new Intent(NonLinearMethods.this, Secant.class);
                 startActivity(aSec);
+                finish();
+                break;
+            case R.id.btnBisection:
+                Intent aBis = new Intent(NonLinearMethods.this, Bisection.class);
+                startActivity(aBis);
+                finish();
+                break;
+            case R.id.btnMultRoots:
+                Intent aMultR = new Intent(NonLinearMethods.this, MultipleRoots.class);
+                startActivity(aMultR);
+                finish();
+                break;
+            case R.id.btnFalseRule:
+                Intent aFalR = new Intent(NonLinearMethods.this, FalseRule.class);
+                startActivity(aFalR);
+                finish();
+                break;
+            case R.id.btnNewton:
+                Intent aNewt = new Intent(NonLinearMethods.this, Newton.class);
+                startActivity(aNewt);
                 finish();
                 break;
         }
