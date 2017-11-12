@@ -41,14 +41,14 @@
     <string name="xsviewFalseRule">Xs</string>
     <string name="xstextFalseRule">Final X</string>
     <string name="tolviewFalseRule">Tolerance</string>
-    <string name="toltextFalseRule">valor Tolerance</string>
+    <string name="toltextFalseRule">Tolerance value</string>
     <string name="iterviewFalseRule">Iterations</string>
     <string name="itertextFalseRule"># Iterations</string>
 
     <string name="xnviewFixedPoint">Xn</string>
     <string name="xntextFixedPoint">x inicial</string>
     <string name="tolviewFixedPoint">Tolerance</string>
-    <string name="toltextFixedPoint">valor Tolerance</string>
+    <string name="toltextFixedPoint">Tolerance value</string>
     <string name="iterviewFixedPoint">Iterations</string>
     <string name="itertextFixedPoint"># Iterations</string>
 
@@ -57,7 +57,7 @@
     <string name="xnviewNewton">Xn</string>
     <string name="xntextNewton">x inicial</string>
     <string name="tolviewNewton">Tolerance</string>
-    <string name="toltextNewton">valor Tolerance</string>
+    <string name="toltextNewton">Tolerance value</string>
     <string name="iterviewNewton">Iterations</string>
     <string name="itertextNewton"># Iterations</string>
 
@@ -66,14 +66,14 @@
     <string name="x1viewSecant">X1</string>
     <string name="x1textSecant">x1</string>
     <string name="tolviewSecant">Tolerance</string>
-    <string name="toltextSecant">valor Tolerance</string>
+    <string name="toltextSecant">Tolerance value</string>
     <string name="iterviewSecant">Iterations</string>
     <string name="itertextSecant"># Iterations</string>
 
     <string name="xnviewMultiplesSQRT">Xn</string>
     <string name="xntextMultiplesSQRT">x inicial</string>
     <string name="tolviewMultiplesSQRT">Tolerance</string>
-    <string name="toltextMultiplesSQRT">valor Tolerance</string>
+    <string name="toltextMultiplesSQRT">Tolerance value</string>
     <string name="iterviewMultiplesSQRT">Iterations</string>
     <string name="itertextMultiplesSQRT"># Iterations</string>
 </resources>

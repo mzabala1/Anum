@@ -4,7 +4,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TableLayout;
@@ -22,8 +21,6 @@ public class FixedPoint extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fixed_point);
-        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
         fab.setOnClickListener(new View.OnClickListener() {
@@ -34,7 +31,7 @@ public class FixedPoint extends AppCompatActivity {
     }
 
     protected void createTable() {
-        final TextView pFijoResultView = (TextView)findViewById(R.id.fpoint_result);
+        final TextView fPointResultView = (TextView)findViewById(R.id.fpoint_result);
         final EditText functionEdit = (EditText)findViewById(R.id.textfunction);
         final EditText functionGEdit = (EditText)findViewById(R.id.textfunctionG);
         final EditText xnEdit = (EditText)findViewById(R.id.xnnumberfpoint);
@@ -126,20 +123,20 @@ public class FixedPoint extends AppCompatActivity {
                     cont++;
                 }
                 if (fx == 0) {
-                    pFijoResultView.setText("Root in Xn = " + xn);
+                    fPointResultView.setText("Root in Xn = " + xn);
                     return;
                 }
                 if (error < tol) {
-                    pFijoResultView.setText("In Xn = " + xn + " is an approximation to a root with an error of " + error);
+                    fPointResultView.setText("In Xn = " + xn + " is an approximation to a root with an error of " + error);
                     return;
                 }
-                pFijoResultView.setText("Surpassed number of iterations.");
+                fPointResultView.setText("Surpassed number of iterations.");
                 return;
             }
-            pFijoResultView.setText("Number of iterations must be higher than 0.");
+            fPointResultView.setText("Number of iterations must be higher than 0.");
             return;
         } catch (RuntimeException e) {
-            pFijoResultView.setText(e.getMessage());
+            fPointResultView.setText(e.getMessage());
         }
     }
 }

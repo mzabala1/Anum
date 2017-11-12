@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class NonLinearMethods extends AppCompatActivity implements View.OnClickListener{
 
-    Button btnIncSearch, btnFixedPoint;
+    Button btnIncSearch, btnFixedPoint, btnSecant;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,9 +17,11 @@ public class NonLinearMethods extends AppCompatActivity implements View.OnClickL
 
         btnIncSearch = findViewById(R.id.btnIncSearch);
         btnFixedPoint = findViewById(R.id.btnFixedPoint);
+        btnSecant = findViewById(R.id.btnSecant);
 
         btnIncSearch.setOnClickListener(this);
         btnFixedPoint.setOnClickListener(this);
+        btnSecant.setOnClickListener(this);
 
         //btnBisection = findViewById(R.id.btnBisection);
 
@@ -48,6 +50,11 @@ public class NonLinearMethods extends AppCompatActivity implements View.OnClickL
             case R.id.btnFixedPoint:
                 Intent aFp = new Intent(NonLinearMethods.this, FixedPoint.class);
                 startActivity(aFp);
+                finish();
+                break;
+            case R.id.btnSecant:
+                Intent aSec = new Intent(NonLinearMethods.this, Secant.class);
+                startActivity(aSec);
                 finish();
                 break;
         }
