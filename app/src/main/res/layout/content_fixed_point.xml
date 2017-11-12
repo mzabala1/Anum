@@ -30,6 +30,34 @@
                     <TextView
                         android:layout_width="150sp"
                         android:layout_height="match_parent"
+                        android:id="@+id/functionx"
+                        android:text="Function(x)"/>
+                    <EditText
+                        android:layout_height="match_parent"
+                        android:id="@+id/textfunction"
+                        android:layout_width="match_parent"
+                        android:inputType="textPersonName"
+                        android:hint="Expression" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="150sp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/functionG"
+                        android:text="Function(g)"/>
+                    <EditText
+                        android:layout_height="match_parent"
+                        android:id="@+id/textfunctionG"
+                        android:layout_width="match_parent"
+                        android:inputType="textPersonName"
+                        android:hint="Expression G" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="150sp"
+                        android:layout_height="match_parent"
                         android:id="@+id/xntextfpoint"
                         android:text="xnviewFixedPoint"/>
                     <EditText

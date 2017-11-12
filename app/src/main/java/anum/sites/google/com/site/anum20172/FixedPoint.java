@@ -22,22 +22,21 @@ public class FixedPoint extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fixed_point);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle = getIntent().getExtras();
-                /*TOCA HACERLA POR PARAMETRO PORQUE SOS DEMASIADO MARICA PARA PONER UNA VARIABLE GLOBAL*/
-                createTable(bundle.getString("expr"),bundle.getString("funcG"));
+                createTable();
             }});
     }
 
-    protected void createTable(String fn, String gn) {
+    protected void createTable() {
         final TextView pFijoResultView = (TextView)findViewById(R.id.fpoint_result);
-
+        final EditText functionEdit = (EditText)findViewById(R.id.textfunction);
+        final EditText functionGEdit = (EditText)findViewById(R.id.textfunctionG);
         final EditText xnEdit = (EditText)findViewById(R.id.xnnumberfpoint);
         final EditText tolEdit = (EditText)findViewById(R.id.tolnumberfpoint);
         final EditText iterEdit = (EditText)findViewById(R.id.iternumberfpoint);
@@ -45,6 +44,8 @@ public class FixedPoint extends AppCompatActivity {
         Double xn = Double.parseDouble(xnEdit.getText().toString());
         Double tol = Double.parseDouble(tolEdit.getText().toString());
         int iter = Integer.parseInt(iterEdit.getText().toString());
+        String fn = functionEdit.getText().toString();
+        String gn = functionGEdit.getText().toString();
 
         DecimalFormat df = new DecimalFormat( "#########0.00E00" );
 
