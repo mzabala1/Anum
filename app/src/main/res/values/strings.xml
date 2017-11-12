@@ -70,10 +70,10 @@
     <string name="iterviewSecant">Iterations</string>
     <string name="itertextSecant"># Iterations</string>
 
-    <string name="xnviewMultiplesSQRT">Xn</string>
-    <string name="xntextMultiplesSQRT">x inicial</string>
-    <string name="tolviewMultiplesSQRT">Tolerance</string>
-    <string name="toltextMultiplesSQRT">Tolerance value</string>
-    <string name="iterviewMultiplesSQRT">Iterations</string>
-    <string name="itertextMultiplesSQRT"># Iterations</string>
+    <string name="xnviewMultipleRoots">Xn</string>
+    <string name="xntextMultipleRoots">x inicial</string>
+    <string name="tolviewMultipleRoots">Tolerance</string>
+    <string name="toltextMultipleRoots">Tolerance value</string>
+    <string name="iterviewMultipleRoots">Iterations</string>
+    <string name="itertextMultipleRoots"># Iterations</string>
 </resources>

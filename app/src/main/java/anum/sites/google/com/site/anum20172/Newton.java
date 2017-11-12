@@ -45,7 +45,7 @@ public class Newton extends AppCompatActivity{
 
         DecimalFormat df = new DecimalFormat( "#########0.00E00" );
 
-        // Creando el analizador para la función
+        // Creating function analyzer
         try {
             Expression f = new ExpressionBuilder(fn)
                     .variables("x").build();
@@ -53,7 +53,7 @@ public class Newton extends AppCompatActivity{
             Expression fp = new ExpressionBuilder(fnp)
                     .variables("x").build();
 
-            // Crear tabla para ingresar los datos obtenidos por el método
+            // Creating the table to input the results from the method
             TableLayout table = (TableLayout)findViewById(R.id.newton_table);
             TableRow ttr = new TableRow(this);
             TableRow.LayoutParams tlp = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT);
