@@ -19,7 +19,16 @@
     <string name="title_activity_matrix">Matrix</string>
     <string name="title_activity_interpolation">Interpolation</string>
     <string name="title_activity_equation_system">Equations System</string>
-
+    <string name="title_activity_gauss_elim">Gaussean Elimination</string>
+    <string name="title_gauss_gpp">G.E Partial Pivot</string>
+    <string name="title_gauss_gtp">G.E Total Pivot</string>
+    <string name="title_cholesky">Cholesky</string>
+    <string name="title_doolittle">Doolittle</string>
+    <string name="title_crout">Crout</string>
+    <string name="title_gauss_seidel">Gauss Seidel</string>
+    <string name="title_jacobi">Jacobi</string>
+    
+    
     <string name="xiviewBis">Xi</string>
     <string name="xitextBis">Initial X</string>
     <string name="xsviewBis">Xs</string>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="One variable equations"
+        android:id="@+id/oneVarEquations" />
+    <item android:title="Interpolation"
+        android:id="@+id/interpolation" />
+    <item android:title="System of Equations"
+        android:id="@+id/systemEquations" />
+    <item android:title="Intergrations"
+        android:id="@+id/integration" />
+</menu>

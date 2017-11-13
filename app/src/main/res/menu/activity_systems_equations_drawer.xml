@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single"></group>
+
+    <item android:title="Solucion de sistemas de ecuaciones">
+        <menu>
+            <item
+                android:icon="@drawable/ic_menu_share"
+                android:title="Gaussean elimination"
+                android:id="@+id/gElim"/>
+            <item
+                android:icon="@drawable/ic_menu_share"
+                android:title="G.E Partial pivot"
+                android:id="@+id/gppElim"/>
+            <item
+                android:icon="@drawable/ic_menu_share"
+                android:title="G.E Total pibot"
+                android:id="@+id/gptElim"/>
+            <item
+                android:title="Cholesky"
+                android:icon="@drawable/ic_menu_share"
+                android:id="@+id/cholesky"/>
+            <item
+                android:title="Doolittle"
+                android:icon="@drawable/ic_menu_share"
+                android:id="@+id/doolittle"/>
+            <item
+                android:title="Crout"
+                android:icon="@drawable/ic_menu_share"
+                android:id="@+id/crout"/>
+            <item
+                android:title="Gauss Seidel"
+                android:icon="@drawable/ic_menu_share"
+                android:id="@+id/gaussSeidel"/>
+            <item
+                android:title="Jacobi"
+                android:icon="@drawable/ic_menu_share"
+                android:id="@+id/jacobi"/>
+        </menu>
+    </item>
+
+</menu>
