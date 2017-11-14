@@ -47,7 +47,7 @@ public class Matrix extends AppCompatActivity {
 
         switch(methods) {
             case "gElim":
-                method1 = "Gaussean Elimination";
+                method1 = "Gaussian Elimination";
                 break;
             case "gppElim":
                 method1 = "G.E Partial pivot";
@@ -98,7 +98,7 @@ public class Matrix extends AppCompatActivity {
         try {
             switch (methods) {
                 case "gElim":
-                    res = gausseanElimination(extended, 0);
+                    res = gaussianElimination(extended, 0);
                     if(!step) print(res, false);
                     ans = regresiveSustitution(res);
                     nameMatrix("");
@@ -110,7 +110,7 @@ public class Matrix extends AppCompatActivity {
                     printArray(ans);
                     break;
                 case "gppElim":
-                    res = gausseanElimination(extended, 1);
+                    res = gaussianElimination(extended, 1);
                     if(!step) print(res, false);
                     ans = regresiveSustitution(res);
                     nameMatrix("");
@@ -122,7 +122,7 @@ public class Matrix extends AppCompatActivity {
                     printArray(ans);
                     break;
                 case "gptElim":
-                    res = gausseanElimination(extended, 2);
+                    res = gaussianElimination(extended, 2);
                     if(!step) print(res, false);
                     ans = regresiveSustitution(res);
                     nameMatrix("");
@@ -225,7 +225,7 @@ public class Matrix extends AppCompatActivity {
         nameMatrix(text);
     }
 
-    public double[][] gausseanElimination(double[][] a, int piv) {
+    public double[][] gaussianElimination(double[][] a, int piv) {
         int n = a.length;
         for (int k = 0; k < n - 1; k++) {
             if(piv == 1){

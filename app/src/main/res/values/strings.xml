@@ -5,6 +5,7 @@
     <string name="anum">Anum</string>
     <string name="non_linear_methods">Non Linear Methods</string>
 
+    <!--Titles-->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
@@ -19,7 +20,7 @@
     <string name="title_activity_matrix">Matrix</string>
     <string name="title_activity_interpolation">Interpolation</string>
     <string name="title_activity_equation_system">Equations System</string>
-    <string name="title_activity_gauss_elim">Gaussean Elimination</string>
+    <string name="title_activity_gauss_elim">Gaussian Elimination</string>
     <string name="title_gauss_gpp">G.E Partial Pivot</string>
     <string name="title_gauss_gtp">G.E Total Pivot</string>
     <string name="title_cholesky">Cholesky</string>
@@ -27,8 +28,28 @@
     <string name="title_crout">Crout</string>
     <string name="title_gauss_seidel">Gauss Seidel</string>
     <string name="title_jacobi">Jacobi</string>
+
+    <!--Helpers-->
+    <string name="helper_activity_inc_search">This method uses as a parameter: a function, an initial value (x0), a delta and a maximum number of iterations. In the beginning, evaluates the initial value in the function, and verifies if this one is 0, then increments the x0 value, summing up the delta, and again evaluates this one isn’t 0 and does not have a contrary sign compared to previous value, if yes, turn the x0 and x0+delta as intervals, else continue iterating until finding values that have contrary signs in the evaluations</string>
+    <string name="helper_activity_bisection">This method helps us find a root in an interval that contains a root, it consists in dividing the interval in half and using the one with the root inside, repeating the process until the root is found.</string>
+    <string name="helper_activity_false_rule">The false rule method is very similar to the bisection method both in conditions and characteristics, the only difference is the way it calculates the midpoint in the given interval. In the false rule method when given a function, which should have continuation guaranteed by the user, and an interval that has a root number, the method will deliver a root number to the user with the tolerance given by the user.</string>
+    <string name="helper_activity_fixed_point">This method allows us to find a root in a function f(x)=0, this root is found first by finding another function x=g(x) that comes from f(x). When the x=g(x) is found and also f(x) = 0, we can say that we found a root, and also a fixed point.</string>
+    <string name="helper_activity_newton">Given a function f (x) = 0, we have to derive it to obtain the function, G (x) = x - (f (x) / f \'(x)). Then we give an initial point (x0) that is close to a root of the function f (x). To calculate the next point (x1) we need to evaluate g (x) at the initial point (x0), to compute X2 we need to evaluate g (x) on X1, and that process until we find a value where Xn + 1 = G (Xn). This method preserves all the characteristics and conditions of the fixed point method, except for the way that the function g is calculated.</string>
+    <string name="helper_activity_secant">This method is a variation of Newton that allows us to find the roots of a function, the differences between Newton and this method is that the derivative is not used instead the idea is to find a secant line to the curve.</string>
+    <string name="helper_activity_multiple_sqrt">This method is a variant of the Newton method to find root numbers, with the difference that if in specific point, the first derivative turns to 0, you can assume that evaluated function has a P root that is multiple and calculate next values using the second derivative, to make sure that method calculates a root number.</string>
+    <string name="helper_activity_gauss_elim">This method transform the system to a more simple system and use substitution to discover the incognitos in the system. This method uses elemental operations of rows to obtain the superior matrix, when we finish recalculating the row we use substitution to gather the desired results.</string>
+    <string name="helper_gauss_gpp">This method transform the system to a more simple system and use substitution to discover the incognitos in the system. This method uses elemental operations of rows to obtain the superior matrix, when we finish recalculating the row we use substitution to gather the desired results, however, we find the biggest absolute value number in the row and interexchange it with the row we are going to change to 0.</string>
+    <string name="helper_gauss_gtp">This method transform the system to a more simple system and use substitution to discover the incognitos in the system. This method uses elemental operations of rows to obtain the superior matrix, when we finish recalculating the row we use substitution to gather the desired results, however, we find the biggest value in the whole system and interexchange the row with the row we are going to change to 0.</string>
+    <string name="helper_cholesky">This method discovers the L and U matrices which we get by applying the Gaussian Elimination method. The L and U matrices must be triangular inferior and superior respectively and the elements in the diagonal must be the same for L and U.</string>
+    <string name="helper_doolittle">This method discovers the L and U matrices which we get by applying the Gaussian Elimination method. The L and U matrices must be triangular inferior and superior respectively and the elements in the diagonal for the U matrix must be equal to 1.</string>
+    <string name="helper_crout">This method discovers the L and U matrices which we get by applying the Gaussian Elimination method. The L and U matrices must be triangular inferior and superior respectively and the elements in the diagonal for the U matrix must be equal to 1.</string>
+    <string name="helper_gauss_seidel">This in an iterative method based in the fixed point method. This method must organize the system to be diagonally dominant to allow for convergence. Afterwards we find the incognitos of the equations and replace it with the initial value on each resulting equations. This process will be done in an iterative manner as many times as necessary to satisfy the parameters given.</string>
+    <string name="helper_jacobi">This in an iterative method based in the fixed point method. This method must organize the systems to be diagonally dominant to allow for convergence. Afterwards we find the incognitos of the equations and replace it with the initial value on each resulting equations. This process will be done in an iterative manner as many times as necessary to satisfy the parameters given.</string>
+    <string name="helper_interpolation_newton">This method consists in creating a polynomial that passes through some given points. This method uses the concept of divided differences that allows us to calculate several of the desired polynomials.</string>
+    <string name="helper_lagrange">This method consists in creating a polynomial of grade ‘n’ that passes through the ‘n+1’ points where: Li(x) accomplishes Li(xk) = 0 if i =/= and Li(xi) = 1. This properties guarantees that Pn(xk) = yk.</string>
+    <string name="helper_neville">The Neville method is specifically useful to evaluate the case where you need to evaluate a interpolator polynomial on a single point or in a very reduced number of points.</string>
     
-    
+    <!--Method parameters-->
     <string name="xiviewBis">Xi</string>
     <string name="xitextBis">Initial X</string>
     <string name="xsviewBis">Xs</string>
