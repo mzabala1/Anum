@@ -6,7 +6,7 @@
         <menu>
             <item
                 android:icon="@drawable/ic_menu_share"
-                android:title="Gaussean elimination"
+                android:title="Gaussian elimination"
                 android:id="@+id/gElim"/>
             <item
                 android:icon="@drawable/ic_menu_share"
