@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="anum.sites.google.com.site.anum20172.NewtonI">
+    tools:context="anum.sites.google.com.site.anum20172.Neville">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -15,6 +15,6 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_newtoni" />
+    <include layout="@layout/content_neville" />
 
 </android.support.design.widget.CoordinatorLayout>

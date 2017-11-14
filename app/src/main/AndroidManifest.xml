@@ -29,6 +29,8 @@
         <activity android:name=".MultipleRoots"></activity>
         <activity android:name=".Matrix"></activity>
         <activity android:name=".NewtonI"></activity>
+        <activity android:name=".Lagrange"></activity>
+        <activity android:name=".Neville"></activity>
     </application>
 
 </manifest>

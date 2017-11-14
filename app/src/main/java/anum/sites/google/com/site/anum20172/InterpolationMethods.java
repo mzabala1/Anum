@@ -40,16 +40,16 @@ public class InterpolationMethods extends AppCompatActivity implements View.OnCl
                 startActivity(aNew);
                 finish();
                 break;
-           /* case R.id.btnFixedPoint:
+            case R.id.btnLagrange:
                 Intent aL = new Intent(InterpolationMethods.this, Lagrange.class);
                 startActivity(aL);
                 finish();
                 break;
-            case R.id.btnSecant:
+            case R.id.btnNeville:
                 Intent aNev = new Intent(InterpolationMethods.this, Neville.class);
                 startActivity(aNev);
                 finish();
-                break;  **/
+                break;
         }
     }
 }
