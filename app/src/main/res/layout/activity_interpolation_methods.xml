@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:openDrawer="start">
+    android:background="@color/colorPrimaryDark"
+    tools:context="anum.sites.google.com.site.anum20172.InterpolationMethods">
 
-</android.support.v4.widget.DrawerLayout>
+    <Button
+        android:id="@+id/btnNewtonI"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Newton"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <Button
+        android:id="@+id/btnLagrange"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Lagrange"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <Button
+        android:id="@+id/btnNeville"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Neville"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52" />
+
+</android.support.constraint.ConstraintLayout>
