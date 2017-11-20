@@ -27,29 +27,31 @@ public class Bisection extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle = getIntent().getExtras();
-                createTable(bundle.getString("expr"));
+                createTable();
             }});
     }
 
-    protected void createTable(String exp) {
+    protected void createTable() {
         final TextView bisectionResultView = (TextView)findViewById(R.id.bisection_result);
 
+        final EditText functionEdit = (EditText)findViewById(R.id.textfunction);
         final EditText xiEdit = (EditText)findViewById(R.id.xinumberBisec);
         final EditText xsEdit = (EditText)findViewById(R.id.xsnumberBisec);
         final EditText tolEdit = (EditText)findViewById(R.id.tolnumberBisec);
         final EditText iterEdit = (EditText)findViewById(R.id.iternumberBisec);
 
+        String fn = functionEdit.getText().toString();
         Double xi = Double.parseDouble(xiEdit.getText().toString());
         Double xs = Double.parseDouble(xsEdit.getText().toString());
         Double tol = Double.parseDouble(tolEdit.getText().toString());
         int iter = Integer.parseInt(iterEdit.getText().toString());
 
+
         DecimalFormat df = new DecimalFormat( "#########0.00E00" );
 
         // Creating function analyzer
         try {
-            Expression e = new ExpressionBuilder(exp)
+            Expression e = new ExpressionBuilder(fn)
                     .variables("x").build();
 
             // Creating the table to input the results from the method

@@ -25,20 +25,21 @@ public class FalseRule extends AppCompatActivity {
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) { //TODO: Change
-                Bundle bundle = getIntent().getExtras();
-                createTable(bundle.getString("expr"));
+            public void onClick(View v) {
+                createTable();
             }});
     }
 
-    protected void createTable(String exp) {
+    protected void createTable() {
         final TextView falseRuleResultView = (TextView)findViewById(R.id.false_rule_result);
 
+        final EditText functionEdit = (EditText)findViewById(R.id.textfunction);
         final EditText xiEdit = (EditText)findViewById(R.id.xinumberFalseRule);
         final EditText xsEdit = (EditText)findViewById(R.id.xsnumberFalseRule);
         final EditText tolEdit = (EditText)findViewById(R.id.tolnumberFalseRule);
         final EditText iterEdit = (EditText)findViewById(R.id.iternumberFalseRule);
 
+        String fn = functionEdit.getText().toString();
         Double xi = Double.parseDouble(xiEdit.getText().toString());
         Double xs = Double.parseDouble(xsEdit.getText().toString());
         Double tol = Double.parseDouble(tolEdit.getText().toString());
@@ -48,7 +49,7 @@ public class FalseRule extends AppCompatActivity {
 
         // Creating function analyzer
         try {
-            Expression e = new ExpressionBuilder(exp)
+            Expression e = new ExpressionBuilder(fn)
                     .variables("x").build();
 
             // Creating the table to input the results from the method

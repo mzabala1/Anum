@@ -30,6 +30,20 @@
                     <TextView
                         android:layout_width="150sp"
                         android:layout_height="match_parent"
+                        android:id="@+id/function"
+                        android:text="Function(x)"/>
+                    <EditText
+                        android:layout_height="match_parent"
+                        android:id="@+id/textfunction"
+                        android:layout_width="match_parent"
+                        android:inputType="textPersonName"
+                        android:hint="expression" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="150sp"
+                        android:layout_height="match_parent"
                         android:id="@+id/xitextFalseRule"
                         android:text="@string/xiviewFalseRule"/>
                     <EditText

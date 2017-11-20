@@ -26,19 +26,21 @@ public class Newton extends AppCompatActivity{
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle = getIntent().getExtras();
-                createTable(bundle.getString("expr"), bundle.getString("funcprima")); //TODO: Change
-            }
-        });
+                createTable();
+            }});
     }
 
-    protected void createTable(String fn, String fnp) {
+    protected void createTable() {
         final TextView newtonResultView = (TextView)findViewById(R.id.newton_result);
 
+        final EditText functionEdit = (EditText)findViewById(R.id.textfunction);
+        final EditText functionPEdit = (EditText)findViewById(R.id.textfunctionP);
         final EditText xnEdit = (EditText)findViewById(R.id.xnnumberNewton);
         final EditText tolEdit = (EditText)findViewById(R.id.tolnumberNewton);
         final EditText iterEdit = (EditText)findViewById(R.id.iternumberNewton);
 
+        String fn = functionEdit.getText().toString();
+        String fnp = functionPEdit.getText().toString();
         Double xn = Double.parseDouble(xnEdit.getText().toString());
         Double tol = Double.parseDouble(tolEdit.getText().toString());
         int iter = Integer.parseInt(iterEdit.getText().toString());

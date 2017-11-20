@@ -67,7 +67,7 @@
     <string name="itertextSearch"># Iterations</string>
 
     <string name="xiviewFalseRule">Xi</string>
-    <string name="xitextFalseRule">x inicial</string>
+    <string name="xitextFalseRule">Initial X</string>
     <string name="xsviewFalseRule">Xs</string>
     <string name="xstextFalseRule">Final X</string>
     <string name="tolviewFalseRule">Tolerance</string>
