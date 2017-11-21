@@ -30,6 +30,48 @@
                     <TextView
                         android:layout_width="150sp"
                         android:layout_height="match_parent"
+                        android:id="@+id/functionx"
+                        android:text="Function(x)"/>
+                    <EditText
+                        android:layout_height="match_parent"
+                        android:id="@+id/textfunction"
+                        android:layout_width="match_parent"
+                        android:inputType="textPersonName"
+                        android:hint="Expression" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="150sp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/functionpx"
+                        android:text="Function'(x)"/>
+                    <EditText
+                        android:layout_height="match_parent"
+                        android:id="@+id/textfunctionp"
+                        android:layout_width="match_parent"
+                        android:inputType="textPersonName"
+                        android:hint="Expression" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="150sp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/functiondpx"
+                        android:text="Function''(x)"/>
+                    <EditText
+                        android:layout_height="match_parent"
+                        android:id="@+id/textfunctiondp"
+                        android:layout_width="match_parent"
+                        android:inputType="textPersonName"
+                        android:hint="Expression" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="150sp"
+                        android:layout_height="match_parent"
                         android:id="@+id/xntextMultipleRoots"
                         android:text="@string/xnviewMultipleRoots"/>
                     <EditText

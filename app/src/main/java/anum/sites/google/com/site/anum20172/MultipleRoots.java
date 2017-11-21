@@ -26,15 +26,15 @@ public class MultipleRoots extends AppCompatActivity{
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle = getIntent().getExtras();
-                createTable(bundle.getString("expr"), bundle.getString("funcprima"), bundle.getString("funcdprima")); //TODO: Change
-            }
-        });
+                createTable();
+            }});
     }
 
-    protected void createTable(String fn, String fnp, String fndp) {
+    protected void createTable() {
         final TextView multipleRootsResultView = (TextView) findViewById(R.id.multiple_roots_result);
-
+        final EditText functionEdit = (EditText)findViewById(R.id.textfunction);
+        final EditText functionPEdit = (EditText)findViewById(R.id.textfunctionp);
+        final EditText functionDPEdit = (EditText)findViewById(R.id.textfunctiondp);
         final EditText xnEdit = (EditText) findViewById(R.id.xnnumberMultipleRoots);
         final EditText tolEdit = (EditText) findViewById(R.id.tolnumberMultipleRoots);
         final EditText iterEdit = (EditText) findViewById(R.id.iternumberMultipleRoots);
@@ -42,6 +42,9 @@ public class MultipleRoots extends AppCompatActivity{
         Double xn = Double.parseDouble(xnEdit.getText().toString());
         Double tol = Double.parseDouble(tolEdit.getText().toString());
         int iter = Integer.parseInt(iterEdit.getText().toString());
+        String fn = functionEdit.getText().toString();
+        String fnp = functionPEdit.getText().toString();
+        String fndp = functionDPEdit.getText().toString();
 
         DecimalFormat df = new DecimalFormat( "#########0.00E00" );
 
