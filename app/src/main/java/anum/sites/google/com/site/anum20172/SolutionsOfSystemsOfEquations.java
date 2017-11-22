@@ -49,7 +49,8 @@ public class SolutionsOfSystemsOfEquations extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 saveTable();
-            }});
+            }
+        });
 
         btnCreate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,22 +61,22 @@ public class SolutionsOfSystemsOfEquations extends AppCompatActivity {
         btnRelax.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bt1 = true;
-                relaxation();
-            }});
+            bt1 = true;
+            relaxation();
+        }});
 
         btnIter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                bt2 = true;
-                iterations();
-            }});
+            bt2 = true;
+            iterations();
+        }});
 
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+/*        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
-        toggle.syncState();
+        toggle.syncState();*/
 
         //NavigationView navigationView = findViewById(R.id.nav_view);
         //navigationView.setNavigationItemSelectedListener(this);

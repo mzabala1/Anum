@@ -23,7 +23,7 @@ public class Neville extends AppCompatActivity {
         final EditText valX = (EditText) findViewById(R.id.valX);
         final EditText valY = (EditText) findViewById(R.id.valY);
         final EditText value = (EditText) findViewById(R.id.value);
-        final TextView textoValor = (TextView) findViewById(R.id.resultText);
+        final TextView textValue = (TextView) findViewById(R.id.resultText);
         Button addCoord = findViewById(R.id.btnAdd);
         Button clearCoord = findViewById(R.id.btnDel);
         Button calculeX = findViewById(R.id.btnCal);
@@ -73,7 +73,7 @@ public class Neville extends AppCompatActivity {
                         y[i] = vy.get(i);
                     }
                     result = NevilleI(x, y, val);
-                    textoValor.setText("The result of evaluating the value is" + '\n' + Double.toString(result));
+                    textValue.setText("The result of evaluating the value is" + '\n' + Double.toString(result));
                 }
 
             }

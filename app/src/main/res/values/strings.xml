@@ -76,7 +76,7 @@
     <string name="itertextFalseRule"># Iterations</string>
 
     <string name="xnviewFixedPoint">Xn</string>
-    <string name="xntextFixedPoint">x inicial</string>
+    <string name="xntextFixedPoint">Initial X</string>
     <string name="tolviewFixedPoint">Tolerance</string>
     <string name="toltextFixedPoint">Tolerance value</string>
     <string name="iterviewFixedPoint">Iterations</string>
@@ -85,7 +85,7 @@
     <string name="title_activity_integration">Integration</string>
 
     <string name="xnviewNewton">Xn</string>
-    <string name="xntextNewton">x inicial</string>
+    <string name="xntextNewton">Initial X</string>
     <string name="tolviewNewton">Tolerance</string>
     <string name="toltextNewton">Tolerance value</string>
     <string name="iterviewNewton">Iterations</string>
@@ -101,7 +101,7 @@
     <string name="itertextSecant"># Iterations</string>
 
     <string name="xnviewMultipleRoots">Xn</string>
-    <string name="xntextMultipleRoots">x inicial</string>
+    <string name="xntextMultipleRoots">Initial X</string>
     <string name="tolviewMultipleRoots">Tolerance</string>
     <string name="toltextMultipleRoots">Tolerance value</string>
     <string name="iterviewMultipleRoots">Iterations</string>

@@ -32,17 +32,14 @@ public class Main extends AppCompatActivity implements View.OnClickListener{
             case R.id.btnNon:
                 Intent aNon = new Intent(Main.this, NonLinearMethods.class);
                 startActivity(aNon);
-                finish();
                 break;
             case R.id.btnSysEqu:
                 Intent aSys = new Intent(Main.this, SolutionsOfSystemsOfEquations.class);
                 startActivity(aSys);
-                finish();
                 break;
             case R.id.btnInterpo:
                 Intent aInter = new Intent(Main.this, InterpolationMethods.class);
                 startActivity(aInter);
-                finish();
                 break;
         }
     }
