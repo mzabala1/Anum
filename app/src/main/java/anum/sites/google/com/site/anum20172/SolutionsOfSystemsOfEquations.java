@@ -22,7 +22,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class SolutionsOfSystemsOfEquations extends AppCompatActivity {
+public class SolutionsOfSystemsOfEquations extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private int size;
     private ArrayList<ArrayList> data = new ArrayList<>();
@@ -77,13 +77,13 @@ public class SolutionsOfSystemsOfEquations extends AppCompatActivity {
         drawer.setDrawerListener(toggle);
         toggle.syncState();
 
-        //NavigationView navigationView = findViewById(R.id.nav_view);
-        //navigationView.setNavigationItemSelectedListener(this);
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
     }
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -91,31 +91,8 @@ public class SolutionsOfSystemsOfEquations extends AppCompatActivity {
         }
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.systems_equations, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-        if(id == R.id.interpolation){
-            Intent a = new Intent(this, InterpolationMethods.class);
-            startActivity(a);
-        }
-        if(id == R.id.oneVarEquations) {
-            Intent a = new Intent(this, Main.class);
-            startActivity(a);
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
     @SuppressWarnings("StatementWithEmptyBody")
+    @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         Bundle bun = new Bundle();
         bun.putInt("size", size);

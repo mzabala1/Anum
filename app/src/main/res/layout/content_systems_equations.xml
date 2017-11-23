@@ -89,10 +89,10 @@
                 android:id="@+id/checkP" />
 
             <Button
-                android:text="Guardar"
+                android:id="@+id/save"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/save"
+                android:text="Save"
                 android:visibility="invisible" />
             <TableRow
                 android:layout_width="wrap_content"

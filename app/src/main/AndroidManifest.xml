@@ -16,21 +16,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NonLinearMethods" />
-        <activity android:name=".SolutionsOfSystemsOfEquations" />
-        <activity android:name=".InterpolationMethods"></activity>
-        <activity android:name=".Grapher"></activity>
-        <activity android:name=".IncSearch"></activity>
-        <activity android:name=".FixedPoint"></activity>
-        <activity android:name=".Secant"></activity>
-        <activity android:name=".FalseRule"></activity>
-        <activity android:name=".Bisection"></activity>
-        <activity android:name=".Newton"></activity>
-        <activity android:name=".MultipleRoots"></activity>
-        <activity android:name=".Matrix"></activity>
-        <activity android:name=".NewtonI"></activity>
-        <activity android:name=".Lagrange"></activity>
-        <activity android:name=".Neville"></activity>
+        <activity android:name=".NonLinearMethods"
+            android:label="One variable methods"/>
+        <activity android:name=".SolutionsOfSystemsOfEquations"
+            android:label="Systems of equations"
+            android:theme="@style/AppTheme1"/>
+        <activity android:name=".InterpolationMethods"
+            android:label="Interpolation"/>
+        <activity android:name=".Grapher"
+            android:label="Grapher"/>
+        <activity android:name=".IncSearch"
+            android:label="Incremetal Search"/>
+        <activity android:name=".FixedPoint"
+            android:label="Fixed Point"/>
+        <activity android:name=".Secant"
+            android:label="Secant"/>
+        <activity android:name=".FalseRule"
+            android:label="False Rule"/>
+        <activity android:name=".Bisection"
+            android:label="Bisection"/>
+        <activity android:name=".Newton"
+            android:label="Newton"/>
+        <activity android:name=".MultipleRoots"
+            android:label="Multiple roots"/>
+        <activity android:name=".Matrix"
+            android:label="Incremetal S"/>
+        <activity android:name=".NewtonI"
+            android:label="Interpolational Newton P"/>
+        <activity android:name=".Lagrange"
+            android:label="Lagrange"/>
+        <activity android:name=".Neville"
+            android:label="Neville"/>
     </application>
 
 </manifest>
