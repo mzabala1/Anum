@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.graphics.DashPathEffect;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.widget.EditText;
 
 import com.androidplot.util.PixelUtils;
 import com.androidplot.xy.BoundaryMode;
@@ -45,8 +46,6 @@ public class Grapher extends Activity {
 
 
     class MySecondaryLabelRenderer extends Grapher.MyLineLabelRenderer {
-
-
         @Override
         public void drawLabel(Canvas canvas, XYGraphWidget.LineLabelStyle style,
                               Number val, float x, float y, boolean isOrigin) {
@@ -68,23 +67,29 @@ public class Grapher extends Activity {
         int rany1 = -6;
         int rany2 = 6;
 
-        Bundle bundle = getIntent().getExtras();
+        final EditText ranX1 = findViewById(R.id.ranX1);
+        final EditText ranX2 = findViewById(R.id.ranX2);
+        final EditText ranY1 = findViewById(R.id.ranY1);
+        final EditText ranY2 = findViewById(R.id.ranY2);
+        if(!ranX1.getText().toString().isEmpty() && !ranX2.getText().toString().isEmpty() && !ranY1.getText().toString().isEmpty() && !ranY2.getText().toString().isEmpty()){
+            ranx1 = Integer.parseInt(ranX1.getText().toString());
+            ranx2 = Integer.parseInt(ranX2.getText().toString());
+            rany1 = Integer.parseInt(ranY1.getText().toString());
+            rany2 = Integer.parseInt(ranY2.getText().toString());
+        }
+
+/*        Bundle bundle = getIntent().getExtras();
         final String x1 = bundle.getString("ranX1");
         final String x2 = bundle.getString("ranX2");
         final String y1 = bundle.getString("ranY1");
-        final String y2 = bundle.getString("ranY2");
-        if(!x1.isEmpty() && !x2.isEmpty() && !y1.isEmpty() && !y2.isEmpty()){
-            ranx1 = Integer.parseInt(x1);
-            ranx2 = Integer.parseInt(x2);
-            rany1 = Integer.parseInt(y1);
-            rany2 = Integer.parseInt(y2);
-        }
+        final String y2 = bundle.getString("ranY2");*/
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grapher);
 
         // initialize our XYPlot reference:
         plot = (XYPlot) findViewById(R.id.plot);
+
 
         plot.setDomainStep(StepMode.INCREMENT_BY_VAL, 1);
         plot.setRangeStep(StepMode.INCREMENT_BY_VAL, 1);

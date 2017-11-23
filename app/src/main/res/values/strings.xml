@@ -4,6 +4,7 @@
     <string name="interpolation_methods">Interpolation Methods</string>
     <string name="anum">Anum</string>
     <string name="non_linear_methods">Non Linear Methods</string>
+    <string name="grapher">Grapher</string>
 
     <!--Titles-->
     <string name="navigation_drawer_open">Open navigation drawer</string>

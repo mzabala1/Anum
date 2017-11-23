@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class Main extends AppCompatActivity implements View.OnClickListener{
 
-    Button btnNon, btnSysEqu, btnInterpo;
+    Button btnNon, btnSysEqu, btnInterpo, btnGrapher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +20,12 @@ public class Main extends AppCompatActivity implements View.OnClickListener{
         btnNon = findViewById(R.id.btnNon);
         btnSysEqu= findViewById(R.id.btnSysEqu);
         btnInterpo = findViewById(R.id.btnInterpo);
+        btnGrapher = findViewById(R.id.btnGrapher);
 
         btnNon.setOnClickListener(this);
         btnSysEqu.setOnClickListener(this);
         btnInterpo.setOnClickListener(this);
+        btnGrapher.setOnClickListener(this);
     }
 
     @Override
@@ -40,6 +42,10 @@ public class Main extends AppCompatActivity implements View.OnClickListener{
             case R.id.btnInterpo:
                 Intent aInter = new Intent(Main.this, InterpolationMethods.class);
                 startActivity(aInter);
+                break;
+            case R.id.btnGrapher:
+                Intent aGraph = new Intent(Main.this, Grapher.class);
+                startActivity(aGraph);
                 break;
         }
     }
