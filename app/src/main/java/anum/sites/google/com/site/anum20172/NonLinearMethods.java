@@ -38,37 +38,30 @@ public class NonLinearMethods extends AppCompatActivity implements View.OnClickL
             case R.id.btnIncSearch:
                 Intent aInc = new Intent(NonLinearMethods.this, IncSearch.class);
                 startActivity(aInc);
-                finish();
                 break;
             case R.id.btnFixedPoint:
                 Intent aFp = new Intent(NonLinearMethods.this, FixedPoint.class);
                 startActivity(aFp);
-                finish();
                 break;
             case R.id.btnSecant:
                 Intent aSec = new Intent(NonLinearMethods.this, Secant.class);
                 startActivity(aSec);
-                finish();
                 break;
             case R.id.btnBisection:
                 Intent aBis = new Intent(NonLinearMethods.this, Bisection.class);
                 startActivity(aBis);
-                finish();
                 break;
             case R.id.btnMultRoots:
                 Intent aMultR = new Intent(NonLinearMethods.this, MultipleRoots.class);
                 startActivity(aMultR);
-                finish();
                 break;
             case R.id.btnFalseRule:
                 Intent aFalR = new Intent(NonLinearMethods.this, FalseRule.class);
                 startActivity(aFalR);
-                finish();
                 break;
             case R.id.btnNewton:
                 Intent aNewt = new Intent(NonLinearMethods.this, Newton.class);
                 startActivity(aNewt);
-                finish();
                 break;
         }
     }

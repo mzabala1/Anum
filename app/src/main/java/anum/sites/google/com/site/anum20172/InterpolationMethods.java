@@ -38,17 +38,14 @@ public class InterpolationMethods extends AppCompatActivity implements View.OnCl
             case R.id.btnNewtonI:
                 Intent aNew = new Intent(InterpolationMethods.this, NewtonI.class);
                 startActivity(aNew);
-                finish();
                 break;
             case R.id.btnLagrange:
                 Intent aL = new Intent(InterpolationMethods.this, Lagrange.class);
                 startActivity(aL);
-                finish();
                 break;
             case R.id.btnNeville:
                 Intent aNev = new Intent(InterpolationMethods.this, Neville.class);
                 startActivity(aNev);
-                finish();
                 break;
         }
     }
